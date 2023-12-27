@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS js </title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="position-relative ">
+
+  <h1 class="text-center mt-5 fw-bold">Bookmarker</h1>
+    
+ </div>
+   
+    <div class="dotte w-75 mx-auto  my-5 "></div>
+
+      <h2 class="text-center mb-5"><i class="fa-solid fa-bookmark "></i> bookmark your favorite  site <i class="fa-solid fa-bookmark"></i></h2>
+        
+
+
+      <div action="" class="container  w-75 my-5 ">
+      
+        <div class="mb-4 input-control">
+            <label for="inputName" class="form-label fs-5"><i class="fa-solid fa-book"></i> Site Name</label>
+            <input type="text" class="position-relative form-control fs-5  " name="name" id="inputName" aria-describedby="helpId" placeholder="Bookmark Name " />
+          
+        </div>
+        <div class="mb-4 input-control">
+            <label for="inputURL" class="form-label fs-5"><i class="fa-solid fa-link-slash"></i> Site URL</label>
+            <input type="text" class=" form-control fs-5 " name="URL" id="inputURL" aria-describedby="helpId" placeholder="website URL"   />
+         
+        </div>
+       <div class="text-center">
+        <button id="button" type="button" class="btn px-5 py-1 bg-danger border-0 rounded-2 fs-5 text-light">submit</button>
+       </div>
+      </div>
+
+      <div class="dotte w-75 mx-auto  my-5 "></div>
+
+      <div id="box" class="d-none position-absolute w-100 ">
+         <div id="box-content" class="position-absolute px-3 py-4 rounded-3">
+          <div class="circles d-flex  justify-content-between align-items-center">
+            <div class="item d-flex mb-3">
+              <div class="circle bg-danger rounded-circle me-2 "></div>
+            <div class="circle bg-warning rounded-circle me-2"></div>
+            <div class="circle bg-success rounded-circle me-2"></div>
+            </div>
+            
+              <i class="mark fa-solid fa-x bg-light"></i>
+           
+            
+              
+          </div>
+         <p class="fw-bold fs-5">Site Name or Url is not valid, Please follow the rules below :</p>
+
+         <ul class="rules">
+         <div class="rule d-flex "> <i class="fa-regular fa-circle-right text-danger fs-4 me-2"></i><li class="mb-3 fs-5">Site name must contain at least 3 characters</li></div>
+          <div class="rule d-flex"><i class="fa-regular fa-circle-right text-danger fs-4 me-2"></i><li class=" mb-3 fs-5">Site URL must be a valid one</li></div>
+         </ul>
+         </div>
+      </div>
+
+  <table class="table  w-75 mx-auto text-center">
+
+    <thead  class="fw-bold ">
+        <tr>
+            <td>Index</td>
+            <td>Website Name</td>
+            <td>Visit</td>
+            <td>Delete</td>
+
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

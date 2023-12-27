@@ -1,0 +1,132 @@
+*,*::after,*::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7ECDE;
+
+}
+
+a{
+    text-decoration:none;
+}
+ul{
+    list-style-type:none;
+}
+a,span{
+    display:inline-block;
+}
+
+.dotte{
+    text-decoration: dotted !important;
+   height: 2px;
+   background-color: transparent;
+    border-bottom: 3px dotted black;
+
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+}
+
+h1::before{
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    width: 25%;
+    z-index: -1;
+    height: 20px;
+    background-color: #FEC260;
+    transition: height 1s ease;
+
+}
+h1:hover::before{
+    height: 35px;
+    cursor: pointer;
+}
+
+
+h2{
+    font-family: 'Righteous', sans-serif;
+    background: linear-gradient(to right, #3EA55B 0 50%, #B1AC4A 50% 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+
+
+.form-control:focus {
+    
+     border-color: #e1901f;
+   
+    box-shadow: 0 0 0 0.25rem rgba(218, 122, 26, 0.25);
+}
+.error{
+    border-color: #e1251f ! important;
+
+   
+}
+.accept{
+    border-color: #0b4a0d !important;
+    
+    box-shadow: 0 0 0 0.25rem rgba(93, 228, 35, 0.25) !important;
+}
+
+
+/*check*/
+.inp{
+    position:relative;
+}
+.iconInp{
+    position:absolute;
+    right: 14%;
+    top:51.5%;
+    
+}
+
+
+#box{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+   
+    top: 0;
+   
+    z-index: 8;
+    height: 120%;
+  
+    
+}
+#box-content{
+ z-index: 99999;
+
+width: 500px;
+height: 260px;
+background-color:white;
+left:50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+}
+.mark{
+    position: relative;
+    bottom: 8px;
+    cursor: pointer;
+}
+
+
+
